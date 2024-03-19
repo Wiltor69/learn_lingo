@@ -2,7 +2,6 @@ import {
   Name,
   Rating,
   ReviewsItem,
-  ReviewsWrapper,
   StarIcon,
   Text,
   User,
@@ -14,7 +13,7 @@ export const Reviews = ({ teacher }) => {
   const { experience, reviews } = teacher;
 
   return (
-    <ReviewsWrapper>
+    <div>
       <Text>{experience}</Text>
       <ul>
         {reviews.map((review, index) => (
@@ -37,6 +36,6 @@ export const Reviews = ({ teacher }) => {
           </ReviewsItem>
         ))}
       </ul>
-    </ReviewsWrapper>
+    </div>
   );
 };

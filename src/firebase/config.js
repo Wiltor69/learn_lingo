@@ -7,7 +7,8 @@ const AUTH_DOMAIN = import.meta.env.REACT_APP_FIREBASE_AUTH_DOMAIN;
 const DATABASE_URL = import.meta.env.REACT_APP_FIREBASE_DATABASE_URL;
 const PROJECT_ID = import.meta.env.REACT_APP_FIREBASE_PROJECT_ID;
 const STORAGE_BUCKET = import.meta.env.REACT_APP_FIREBASE_STORAGE_BUCKET;
-const MESSAGING_SENDER_ID = import.meta.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID;
+const MESSAGING_SENDER_ID = import.meta.env
+  .REACT_APP_FIREBASE_MESSAGING_SENDER_ID;
 const APP_ID = import.meta.env.REACT_APP_FIREBASE_APP_ID;
 
 const firebaseConfig = {
@@ -22,4 +23,4 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const database = getDatabase(app);
+export const db = getDatabase(app);

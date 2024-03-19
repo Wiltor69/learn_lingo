@@ -1,4 +1,4 @@
-import { BookForm } from "../BookForm/BookForm";
+import { BookForm } from "components/BookForm/BookForm";
 import {
   Avatar,
   Name,
