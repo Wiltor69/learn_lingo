@@ -1,9 +1,9 @@
-import { Logo } from "../Logo/Logo";
+import { Logo } from "components/Logo/Logo";
 import { HeaderWrapper } from "./Header.styled";
-import { Container } from "../Container/Container";
-import { Navigation } from "../Navigation/Navigation";
+import { Container } from "components/Container/Container";
+import { Navigation } from "components/Navigation/Navigation";
 import { Link } from "react-router-dom";
-import { AuthNav } from "../AuthNav/AuthNav";
+import { AuthNav } from "components/AuthNav/AuthNav";
 
 export const Header = () => {
   return (

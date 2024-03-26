@@ -6,13 +6,13 @@ import {
   LogoutIcon,
   RegistrationBtn,
 } from "./AuthNav.styled";
-import sprite from "../../images/sprite.svg";
+import sprite from "images/sprite.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { selectIsLoggedIn } from "../../redux/auth/authSelectors";
 import { useState } from "react";
-import { BasicModalWindow } from "../Modal/BasicModalWindow/BasicModalWindow";
-import { ModalRegistration } from "../Modal/ModalRegistration/ModalRegistration";
-import { ModalLogIn } from "../Modal/ModalLogIn/ModalLogIn";
+import { BasicModalWindow } from "components/Modal/BasicModalWindow/BasicModalWindow";
+import { ModalRegistration } from "components/Modal/ModalRegistration/ModalRegistration";
+import { ModalLogIn } from "components/Modal/ModalLogIn/ModalLogIn";
 import { signOut } from "firebase/auth";
 import { auth } from "../../firebase/config";
 import { removeUser } from "../../redux/auth/authSlice";
